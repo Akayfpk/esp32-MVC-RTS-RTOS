@@ -1,0 +1,14 @@
+[wokwi]
+version = 1
+elf = ".pio/build/esp32/firmware.elf"
+firmware = ".pio/build/esp32/firmware.bin"
+
+[[i2c]]
+sda = 21
+scl = 22
+pullup = true
+
+[[display]]
+type = "ssd1306"
+model = "128x64"
+address = 0x3C
